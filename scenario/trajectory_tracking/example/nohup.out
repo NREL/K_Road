@@ -1,0 +1,103 @@
+[I 15:16:53.115 NotebookApp] [nb_conda_kernels] enabled, 4 kernels found
+[I 15:16:53.242 NotebookApp] Serving notebooks from local directory: /home/ctripp/src/cavs-environments/cavs_environments/vehicle/k_road/scenario/path_following/example
+[I 15:16:53.242 NotebookApp] The Jupyter Notebook is running at:
+[I 15:16:53.242 NotebookApp] http://localhost:8888/?token=a99a4a04ff2dd6f6eb3f969eca07a3a099ed3c4d5fbd3df6
+[I 15:16:53.242 NotebookApp]  or http://127.0.0.1:8888/?token=a99a4a04ff2dd6f6eb3f969eca07a3a099ed3c4d5fbd3df6
+[I 15:16:53.242 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 15:16:53.251 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/ctripp/.local/share/jupyter/runtime/nbserver-6719-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=a99a4a04ff2dd6f6eb3f969eca07a3a099ed3c4d5fbd3df6
+     or http://127.0.0.1:8888/?token=a99a4a04ff2dd6f6eb3f969eca07a3a099ed3c4d5fbd3df6
+[E 15:16:54.532 NotebookApp] Could not open static file ''
+[W 15:16:54.575 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 6.80ms referer=http://localhost:8888/tree?token=a99a4a04ff2dd6f6eb3f969eca07a3a099ed3c4d5fbd3df6
+[W 15:16:54.587 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 0.82ms referer=http://localhost:8888/tree?token=a99a4a04ff2dd6f6eb3f969eca07a3a099ed3c4d5fbd3df6
+[W 15:17:19.344 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 1.50ms referer=http://localhost:8888/tree?token=a99a4a04ff2dd6f6eb3f969eca07a3a099ed3c4d5fbd3df6
+[W 15:17:19.359 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 0.86ms referer=http://localhost:8888/tree?token=a99a4a04ff2dd6f6eb3f969eca07a3a099ed3c4d5fbd3df6
+[I 15:17:26.999 NotebookApp] Creating new notebook in 
+[W 15:17:27.186 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 1.95ms referer=http://localhost:8888/notebooks/Untitled.ipynb?kernel_name=conda-env-cavs-environments-py
+[W 15:17:27.205 NotebookApp] 404 GET /static/components/react/react-dom.production.min.js (127.0.0.1) 1.05ms referer=http://localhost:8888/notebooks/Untitled.ipynb?kernel_name=conda-env-cavs-environments-py
+[I 15:17:27.497 NotebookApp] Kernel started: 626aeafa-d838-4866-bdcf-b9587605eda0
+[I 15:17:27.861 NotebookApp] Adapting from protocol version 5.1 (kernel 626aeafa-d838-4866-bdcf-b9587605eda0) to 5.3 (client).
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.version
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.version
+[I 15:19:27.496 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:21:27.498 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:23:27.510 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:31:27.509 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:33:27.511 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:35:27.510 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:37:27.534 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:39:27.510 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:41:27.514 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:43:27.512 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:45:27.511 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:47:27.489 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:49:27.537 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:51:27.512 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:53:27.495 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:55:27.499 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:57:27.499 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:59:27.635 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:01:27.495 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:03:27.503 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:05:27.533 NotebookApp] Saving file at /Untitled.ipynb
+[W 16:05:38.687 NotebookApp] IOPub data rate exceeded.
+    The notebook server will temporarily stop sending output
+    to the client in order to avoid crashing it.
+    To change this limit, set the config variable
+    `--NotebookApp.iopub_data_rate_limit`.
+    
+    Current values:
+    NotebookApp.iopub_data_rate_limit=1000000.0 (bytes/sec)
+    NotebookApp.rate_limit_window=3.0 (secs)
+    
+[I 16:07:27.606 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:07:48.829 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:09:27.501 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:11:27.495 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:13:27.517 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:15:27.507 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:17:27.541 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:19:27.512 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:21:27.517 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:23:27.517 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:25:27.525 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:27:27.537 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:29:27.545 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:31:27.504 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:33:27.494 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:35:27.525 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:37:27.517 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:37:34.103 NotebookApp] Starting buffering for 626aeafa-d838-4866-bdcf-b9587605eda0:4e998803055948e9869a5480e28a3450
+[I 16:37:34.514 NotebookApp] Kernel restarted: 626aeafa-d838-4866-bdcf-b9587605eda0
+[I 16:37:34.859 NotebookApp] Adapting from protocol version 5.1 (kernel 626aeafa-d838-4866-bdcf-b9587605eda0) to 5.3 (client).
+[I 16:37:34.859 NotebookApp] Restoring connection for 626aeafa-d838-4866-bdcf-b9587605eda0:4e998803055948e9869a5480e28a3450
+[I 16:37:34.859 NotebookApp] Replaying 5 buffered messages
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.version
+[I 16:37:56.186 NotebookApp] Starting buffering for 626aeafa-d838-4866-bdcf-b9587605eda0:4e998803055948e9869a5480e28a3450
+[I 16:37:56.497 NotebookApp] Kernel restarted: 626aeafa-d838-4866-bdcf-b9587605eda0
+[I 16:37:56.884 NotebookApp] Adapting from protocol version 5.1 (kernel 626aeafa-d838-4866-bdcf-b9587605eda0) to 5.3 (client).
+[I 16:37:56.884 NotebookApp] Restoring connection for 626aeafa-d838-4866-bdcf-b9587605eda0:4e998803055948e9869a5480e28a3450
+[I 16:37:56.885 NotebookApp] Replaying 6 buffered messages
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.version
+[I 16:38:09.817 NotebookApp] Starting buffering for 626aeafa-d838-4866-bdcf-b9587605eda0:4e998803055948e9869a5480e28a3450
+[I 16:38:10.135 NotebookApp] Kernel restarted: 626aeafa-d838-4866-bdcf-b9587605eda0
+[I 16:38:10.429 NotebookApp] Adapting from protocol version 5.1 (kernel 626aeafa-d838-4866-bdcf-b9587605eda0) to 5.3 (client).
+[I 16:38:10.429 NotebookApp] Restoring connection for 626aeafa-d838-4866-bdcf-b9587605eda0:4e998803055948e9869a5480e28a3450
+[I 16:38:10.429 NotebookApp] Replaying 6 buffered messages
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.version
+[I 16:39:27.509 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:53:27.544 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:55:27.505 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:57:27.529 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:59:27.501 NotebookApp] Saving file at /Untitled.ipynb
+[I 17:01:27.500 NotebookApp] Saving file at /Untitled.ipynb
+[I 17:01:49.256 NotebookApp] Saving file at /Untitled.ipynb
+[I 17:03:27.534 NotebookApp] Saving file at /Plot Aggregated Results.ipynb
+[I 17:04:43.076 NotebookApp] Saving file at /Plot Aggregated Results.ipynb
+[C 18:07:03.487 NotebookApp] received signal 15, stopping
+[I 18:07:03.488 NotebookApp] Shutting down 1 kernel
+[I 18:07:03.589 NotebookApp] Kernel shutdown: 626aeafa-d838-4866-bdcf-b9587605eda0

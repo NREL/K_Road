@@ -1,0 +1,3 @@
+[submodule "cavs_environments/vehicle/classical_controllers/GPC"]
+	path = cavs_environments/vehicle/classical_controllers/GPC
+	url = https://github.com/sarahaguasvivas/GPC

@@ -1,0 +1,141 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Sarah's stuff
+#*.pkl
+junk/
+
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+/target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# dotenv
+.env
+.envrc
+
+# virtualenv
+.venv
+venv/
+ENV/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+
+#pycharm settings
+.idea
+
+#MacOS
+.DS_Store
+/log/
+/scenario/trajectory_tracking/experiment/apr10_2021_controllers/test_d5_noise_stdev_0_02_alpha_0_5_controller_pid_use_controller_action_w_10_tradeoff_0_005_2021-04-04-07-59-40n1tgukor/
+/scenario/trajectory_tracking/experiment/aug4_2020_controllers/
+/scenario/trajectory_tracking/experiment/aug11_2020_controller/
+/scenario/trajectory_tracking/experiment/aug11_2020_controllers/
+/scenario/trajectory_tracking/experiment/aug11_2020_controllers_1/
+/scenario/trajectory_tracking/experiment/aug11_2020_experiments/
+/scenario/trajectory_tracking/experiment/aug13_2020_controllers/
+/scenario/trajectory_tracking/experiment/aug14_mpc_cpu_plot_experiments/
+/scenario/trajectory_tracking/experiment/august_2_experiments/
+/scenario/trajectory_tracking/experiment/august_5_experiments/
+/scenario/trajectory_tracking/experiment/august_13_experiments/
+/scenario/trajectory_tracking/experiment/august_13_plots/
+/scenario/trajectory_tracking/experiment/august_14_plots/
+/scenario/trajectory_tracking/experiment/falcone_2007/
+/scenario/trajectory_tracking/experiment/fig/
+/scenario/trajectory_tracking/experiment/jul14_2020_controllers/
+/scenario/trajectory_tracking/experiment/jul14_2020_experiments/
+/scenario/trajectory_tracking/experiment/jul22_2020_controller/
+/scenario/trajectory_tracking/experiment/jun29_2020_experiments/
+/scenario/trajectory_tracking/experiment/log/
+/scenario/trajectory_tracking/experiment/log2/
+/scenario/trajectory_tracking/experiment/oct2_2020_controllers/test_x23_noise_stdev_0_02_alpha_0_5_controller_pid_use_controller_action_w_10_steer_0_0_accel_0_01_tradeoff_0_005_2020-08-31-15-25-446m8e4hs0/
+/scenario/trajectory_tracking/experiment/pub_logs/
+/scenario/trajectory_tracking/experiment/pulsed_input_log/
+/scenario/trajectory_tracking/experiment/sept29_2020_controllers/
+/scenario/trajectory_tracking/experiment/speed/
+/scenario/trajectory_tracking/experiment/test_august_13/

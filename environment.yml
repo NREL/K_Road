@@ -1,0 +1,22 @@
+name: cavs-environments
+dependencies:
+  - python=3.7
+  - pandas
+  - jupyter
+  - numpy
+  - scipy
+  - matplotlib
+  - tensorflow
+  - nb_conda_kernels
+  - pip:
+      - pygame
+      - pymunk
+      - gym
+      - ray[rllib]
+      - ray[debug]
+      - requests
+      - setproctitle
+      - lz4
+      - image
+      - stable_baselines
+      - --editable=git+https://github.com/openai/spinningup.git#egg=spinup
