@@ -16,6 +16,7 @@ from command_line_tools.run_tools import (
 )
 from scenario.trajectory_tracking.experiment.experiment_common import list_of_vectors_to_list_of_tuples, \
     make_environment_and_controller, common_default_config
+
 from scenario.trajectory_tracking.trajectory_tracking_process import TrajectoryTrackingProcess
 
 
@@ -174,7 +175,7 @@ def run(config, run_prefix, run_number):
         # d_angular_velocity.append(ego_vehicle.angular_velocity)
         # d_yaw.append(ego_vehicle.angle)
 
-        recorder.accumulate(
+        recorder.write(
             step_number,
             is_terminal,
             reward,
@@ -330,6 +331,7 @@ def run_checkpoint_experiment(default_config, info, path_generator, render):
     config, run_prefix = setup_run(default_config, use_command_line=False)
     try:
         print('Running experiment: {} | {}'.format(name, config['name']))
+        print(config)
         evaluations = [run(config, run_prefix, i) for i in range(config['num_runs'])]
         print("Experiment " + name + " finished!")
     except Exception as e:
@@ -377,33 +379,33 @@ def run_classical_experiments(
 #               without manually specifying the config
 ######################################################################
 
-# paths = ['curriculum_angled_path_factory', 'sine_path_generator', 'circle_path_factory',
-#                 'figure_eight_generator', 'carla_json_generator', 'straight_variable_speed_generator',
-#                 'left_lane_change_generator', 'right_lane_change_generator', 'snider_2009_track_generator',
-#                 'double_lane_change_generator', 'straight_variable_speed_pulse_generator',
-#                 'hairpin_turn_generator', 'right_turn_generator']
-
-# path_generators = [
-#     'curriculum_angled_path_factory',
-#     'circle_path_factory',
-#     'figure_eight_generator',
-#     # 'carla_json_generator',
-#     'double_lane_change_generator',
-#     'straight_variable_speed_pulse_generator',
-#     'hairpin_turn_generator',
-#     'hairpin_turn_flat_genera tor',
-#     'right_turn_generator',
-#     'right_turn_flat_generator',
-#     'snider_2009_track_generator',
-#     ]
+#paths = ['curriculum_angled_path_factory', 'sine_path_generator', 'circle_path_factory',
+#                'figure_eight_generator', 'carla_json_generator', 'straight_variable_speed_generator',
+#                'left_lane_change_generator', 'right_lane_change_generator', 'snider_2009_track_generator',
+#                'double_lane_change_generator', 'straight_variable_speed_pulse_generator',
+#                'hairpin_turn_generator', 'right_turn_generator']
 #
-# rl_config_dictionary = parse_json_rl_controllers("sept29_2020_controllers")
-# # rl_config_dictionary = parse_json_rl_controllers("oct2_2020_controllers")
-# run_checkpoint_experiments(rl_controller_dictionary=rl_config_dictionary,
-#                    path_generators=path_generators,
-#                    render=False,
-#                    common_default_config=common_default_config)
-# run_classical_experiments(common_default_config=common_default_config, path_generators=path_generators)
+#path_generators = [
+#    'curriculum_angled_path_factory',
+#    'circle_path_factory',
+#    'figure_eight_generator',
+#    # 'carla_json_generator',
+#    'double_lane_change_generator',
+#    'straight_variable_speed_pulse_generator',
+#    'hairpin_turn_generator',
+#    'hairpin_turn_flat_genera tor',
+#    'right_turn_generator',
+#    'right_turn_flat_generator',
+#    'snider_2009_track_generator',
+#    ]
+#
+#rl_config_dictionary = parse_json_rl_controllers("sept29_2020_controllers")
+## rl_config_dictionary = parse_json_rl_controllers("oct2_2020_controllers")
+#run_checkpoint_experiments(rl_controller_dictionary=rl_config_dictionary,
+#                   path_generators=path_generators,
+#                   render=False,
+#                   common_default_config=common_default_config)
+#run_classical_experiments(common_default_config=common_default_config, path_generators=path_generators)
 ######################################################################
 
 # default_config = merge_configs(common_default_config, {
@@ -459,9 +461,11 @@ def run_classical_experiments(
 if __name__ == "__main__":
     default_config = merge_configs(common_default_config, {
         'num_runs': 1,
+        'num_workers': 4,
         'render': False,
         'controller': 'scheduled',
-        'name': 'scheduled',
+        'name': '3dof',
+
         'environment': {
             'terminator': {},
             'controller': {

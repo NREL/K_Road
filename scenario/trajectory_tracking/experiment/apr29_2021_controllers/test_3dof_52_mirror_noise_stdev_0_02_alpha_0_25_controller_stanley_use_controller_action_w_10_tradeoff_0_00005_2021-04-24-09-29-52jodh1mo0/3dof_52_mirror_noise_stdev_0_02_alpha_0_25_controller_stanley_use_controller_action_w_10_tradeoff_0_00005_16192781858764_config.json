@@ -1,0 +1,65 @@
+{
+  "checkpoint": null,
+  "controller": "stanley",
+  "environment": {
+    "controller": {},
+    "cross_track_position": 0,
+    "max_cross_track_error": 10.0,
+    "max_speed_error": 50.0,
+    "observer": {
+      "mirror": true,
+      "num_waypoints": 10,
+      "space_waypoints_with_actual_speed": false,
+      "use_alternate_reference_angle": false,
+      "use_angles": true,
+      "use_distances": true,
+      "use_relative_angles": false,
+      "use_relative_distances": false,
+      "use_target_speeds": false,
+      "use_velocity_reference_angle": false,
+      "waypoint_spacing": 1.0
+    },
+    "process": {
+      "differential_steering": false,
+      "path_generator": "curriculum_angled_path_factory",
+      "path_generator_config": {},
+      "scale_actions": false,
+      "time_dilation": 20,
+      "tire_model": "fiala"
+    },
+    "rewarder": {
+      "acceleration_control_effort_tradeoff": 0.0,
+      "speed_tradeoff": 5e-05,
+      "steering_control_effort_tradeoff": 0.0
+    },
+    "terminator": {}
+  },
+  "group": "test",
+  "max_run_length": 10000000,
+  "name": "3dof_52_mirror_noise_stdev_0_02_alpha_0_25_controller_stanley_use_controller_action_w_10_tradeoff_0_00005",
+  "num_cpus": 4,
+  "num_runs": 1,
+  "optimizer": {
+    "alpha": 0.25,
+    "candidates_per_iteration": 574,
+    "name": "ESRLCoordinatedOptimizer",
+    "noise_stdev": 0.02,
+    "theta_decay": 0.0
+  },
+  "rllib": {
+    "env_config": {},
+    "model": {
+      "conv_filters": null,
+      "fcnet_activation": "relu",
+      "fcnet_hiddens": [
+        512,
+        512
+      ]
+    },
+    "num_evals_per_iteration": 1,
+    "num_gpus": 0.0,
+    "num_workers": 4,
+    "observation_filter": "NoFilter"
+  },
+  "trainer": "CoordinatedDPSTrainer"
+}

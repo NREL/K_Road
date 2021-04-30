@@ -38,7 +38,6 @@ class JSONLinesRecordLogger(RecordLogger):
                 return obj.toJSON()
             except:
                 return obj.__dict__
-        
         self._file.write(json.dumps(
             data,
             ensure_ascii=False,
