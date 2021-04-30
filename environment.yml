@@ -4,15 +4,16 @@ dependencies:
   - pandas
   - jupyter
   - numpy
+  - rtree
   - scipy
   - matplotlib
   - tensorflow
   - nb_conda_kernels
   - pip:
       - pygame
-      - pymunk
+      - pymunk=5.7.0
       - gym
-      - ray[rllib]
+      - ray[rllib]=1.0.0
       - ray[debug]
       - requests
       - setproctitle
