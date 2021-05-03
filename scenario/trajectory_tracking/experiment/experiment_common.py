@@ -311,13 +311,16 @@ def setup_environment(config: {}) -> {}:
                 cross_track_position=cross_track_position,
                 **environment_config['process'],
                 )
-            
+
             additive_transform = None
-            if controller_class is not None:
+            controller = None
+            if controller_class is None:
+                controller = NullController(process.get_action_space())
+            else:
                 controller = controller_class(**environment_config['controller'])
-                additive_transform = AdditiveActionTransform(1.0, 1.0, controller)
-                action_transforms.append(additive_transform)
-            
+            additive_transform = AdditiveActionTransform(1.0, 1.0, controller)
+            action_transforms.append(additive_transform)
+
             super().__init__(
                 process,
                 TrajectoryTrackingObserver(

@@ -283,7 +283,7 @@ class TrajectoryTrackingObserver(Observer):
         mirror_coefficient = -1.0 if cross_track_delta_angle < 0.0 and self.mirror else 1.0
         
         if self.mirror:
-            self.additive_transform.base_coefficient = mirror_coefficient
+            self.additive_transform.base_coefficient = np.array([1.0, mirror_coefficient])
         # process.mirror_steering = mirror_coefficient
         
         if self.use_controller_action:
